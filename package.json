@@ -1,0 +1,20 @@
+{
+	"name": "writer.fgascon.com",
+	"description": "Writer to write articles for FGascon.com",
+	"version": "0.0.0",
+	"author": {
+		"name": "Frédéric Gascon"
+	},
+	"dependencies": {
+		"express": "3.0.3",
+		"commander": "1.1.1",
+		"request": "2.12.0",
+		"hjs": "0.0.4",
+		"scss": "0.2.4"
+	},
+	"main": "server",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/fgascon/writer.fgascon.com.git"
+	}
+}

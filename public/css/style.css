@@ -1,0 +1,41 @@
+body {
+	margin-bottom: 40px;
+}
+
+.navbar-wrapper {
+	position: relative;
+	z-index: 10;
+	margin-top: 20px;
+	margin-bottom: -90px;
+}
+
+.main-content {
+	margin-top: 80px;
+}
+
+.writer-form {
+	width: 95%;
+	margin: 50px auto 30px;
+}
+
+.writer-form .buttons-row {
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+
+.writer-form .title-entry {
+	display: block;
+	width: 96%;
+	height: 1em;
+	padding: .4em 2%;
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+
+.writer-form .texteditor {
+	display: block;
+	width: 96%;
+	height: 500px;
+	padding: 1.3em 2%;
+	font-size: 1.2em;
+}

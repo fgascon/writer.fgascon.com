@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{title}}</title>
+		
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/style.css">
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container navbar-wrapper">
+			<div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+					<a class="brand" href="#">{{title}}</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
+							<!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Action</a>
+									</li>
+									<li>
+										<a href="#">Another action</a>
+									</li>
+									<li>
+										<a href="#">Something else here</a>
+									</li>
+									<li class="divider"></li>
+									<li class="nav-header">
+										Nav header
+									</li>
+									<li>
+										<a href="#">Separated link</a>
+									</li>
+									<li>
+										<a href="#">One more separated link</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div><!-- /.navbar-inner -->
+			</div><!-- /.navbar -->
+		</div>
+		
+		<div class="container main-content">
+			
+			<form class="writer-form" method="post">
+				<div class="row buttons-row">
+					<input type="submit" class="btn btn-primary pull-right" value="Save">
+					<span class="author-name">Written by {{article.author}}</span>
+				</div>
+				<input type="text" name="title" class="title-entry" value="{{article.title}}" placeholder="Article title">
+				<input type="hidden" name="author" class="author-entry" value="{{article.author}}">
+				<textarea name="body" class="texteditor" placeholder="Article text">{{article.body}}</textarea>
+			</form>
+			
+			<footer>
+				<p class="pull-right">
+					<a href="#">Back to top</a>
+				</p>
+			</footer>
+		</div>
+		
+	</body>
+</html>
